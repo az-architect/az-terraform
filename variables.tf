@@ -96,6 +96,8 @@ variable "subnet_name" {
   description = "subnet description"
   default     = "vnet1"
 
+  
+
 
 }
 

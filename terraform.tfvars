@@ -8,3 +8,4 @@ clientSecret = ""
 
 location_rg = "eastus"
 resource_group_name = "alilia_3"
+

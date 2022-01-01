@@ -15,3 +15,12 @@ provider "azurerm" {
     
   }
 }
+
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "NetworkWatcherRG"
+    storage_account_name = "aliliastorage1234"
+    container_name       = "tfstate"
+    key                  = "prod.terraform.tfstate"
+  }
+}

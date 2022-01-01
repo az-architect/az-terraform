@@ -68,4 +68,5 @@ resource "azurerm_public_ip" "example" {
   tags = {
     environment = "Production"
   }
+  
 }

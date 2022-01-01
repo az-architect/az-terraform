@@ -7,4 +7,4 @@ clientId = ""
 clientSecret = ""
 
 location_rg = "eastus"
-resource_group_name = "alilia_2"
+resource_group_name = "alilia_3"

@@ -52,3 +52,20 @@ resource "azurerm_virtual_network" "az303-vnet" {
 #data "azurerm_resource_group" "name" {
 
 #}
+
+
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "West Europe"
+}
+
+resource "azurerm_public_ip" "example" {
+  name                = "acceptanceTestPublicIp1"
+  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.example.location
+  allocation_method   = "Static"
+
+  tags = {
+    environment = "Production"
+  }
+}

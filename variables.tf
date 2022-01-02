@@ -1,16 +1,16 @@
 
 
 
-variable "location"{
-    type = string
-default = "eastus"
+variable "location" {
+  type    = string
+  default = "eastus"
 
 }
 
-variable "env"{
-type = string
-default = "dev"
-description = "the envoronment"
+variable "env" {
+  type        = string
+  default     = "dev"
+  description = "the envoronment"
 
 
 
@@ -19,30 +19,30 @@ description = "the envoronment"
 
 
 variable "subscriptionId" {
-    type = string
-    description = "(optional) describe your variable"
+  type        = string
+  description = "(optional) describe your variable"
 }
 
 variable "tenantId" {
-    type = string
-    description = "(optional) describe your variable"
+  type        = string
+  description = "(optional) describe your variable"
 }
 
 variable "clientId" {
-    type = string
-    description = "(optional) describe your variable"
+  type        = string
+  description = "(optional) describe your variable"
 }
 
 variable "clientSecret" {
-    type = string
-    description = "(optional) describe your variable"
+  type        = string
+  description = "(optional) describe your variable"
 }
 
 
 variable "resource_group_name" {
   type        = string
   description = "description of the variable"
-  
+
 }
 
 variable "resource_group_location" {
@@ -85,7 +85,7 @@ variable "vnet_name" {
 variable "vnet_loc" {
   type        = string
   description = "vnet location"
-  default = "value"
+  default     = "value"
 
 
 
@@ -96,7 +96,7 @@ variable "subnet_name" {
   description = "subnet description"
   default     = "vnet1"
 
-  
+
 
 
 }

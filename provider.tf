@@ -1,18 +1,18 @@
-  terraform {
+terraform {
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
+      source  = "hashicorp/azurerm"
       version = "2.90.0"
     }
 
-    
+
   }
 }
 
 provider "azurerm" {
   # Configuration options
   features {
-    
+
   }
 }
 
@@ -23,5 +23,5 @@ terraform {
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
   }
-  
+
 }
